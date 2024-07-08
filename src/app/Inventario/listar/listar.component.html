@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="card">
+    <div class="card-header">
+      <h3>Inventario Productos</h3>
+    </div>
+    <div class="card-body">
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Producto</th>
+            <th scope="col">Cantidad Producto</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor='let item of inventario' class="text-center"> 
+            <td>{{item.id}}</td>
+            <td>{{item.producto}}</td>
+            <td>{{item.cantidad}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
